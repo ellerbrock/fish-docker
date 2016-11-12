@@ -1,5 +1,7 @@
 # Fish Shell base on Alpine Linux (6 MB)
 
+[![Docker Automated Build](https://img.shields.io/docker/automated/frapsoft/fish.svg)](https://hub.docker.com/r/frapsoft/fish/) [![Docker Pulls](https://img.shields.io/docker/pulls/frapsoft/fish.svg)](https://hub.docker.com/r/frapsoft/fish/) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg)](https://github.com/ellerbrock/open-source-badges/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)
+
 - Docker Hub: [frapsoft/fish](https://hub.docker.com/r/frapsoft/fish/)
 - Dockerfile: <https://github.com/ellerbrock/fish-docker/blob/master/Dockerfile>
 - Base Image: [alpine](https://hub.docker.com/_/alpine/)
