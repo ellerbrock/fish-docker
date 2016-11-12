@@ -2,14 +2,16 @@ FROM alpine
 
 MAINTAINER Maik Ellerbrock (github.com/ellerbrock)
 
-ENV CONTAINER_VERSION 0.0.1
+ENV CONTAINER_VERSION 0.0.2
 ENV CONTAINER_NAME frapsoft/fish
 ENV CONTAINER_REPO https://github.com/ellerbrock/fish-docker
 
 RUN apk update && \
-    apk add --no-cache fish
+    apk add --no-cache fish && \
+    rm -f /tmp/* /etc/apk/cache/*
 
-ENV SHELL /bin/fish
+RUN sed -i -e "s/bin\/ash/usr\/bin\/fish/" /etc/passwd
 
-ENTRYPOINT ["fish"]
-CMD ["--version"]
+ENV SHELL /usr/bin/fish
+
+CMD ["fish", "--version"]

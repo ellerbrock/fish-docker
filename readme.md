@@ -18,11 +18,11 @@
 
 ### execute shell command
 
-`docker run frapsoft/fish -c ls`
+`docker run frapsoft/fish ls`
 
 ### interactive shell
 
-`docker run -it frapsoft/fish -i`
+`docker run -it frapsoft/fish fish`
 
 ### Contact / Social Media
 
